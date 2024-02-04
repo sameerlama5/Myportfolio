@@ -37,8 +37,7 @@ header .nav-btn {
   border: none;
   outline: none;
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   font-size: 1.8rem;
 }
 .btn-resume {
@@ -53,8 +52,7 @@ header .nav-btn {
 @media(max-width:768px) {
   header .nav-btn {
     flex-direction: column-reverse;
-    visibility: visible;
-    opacity: 1;
+    display: block;
   }
   .nav-container nav {
     position: fixed;
@@ -103,28 +101,17 @@ header .nav-btn {
   color: gray;
 }
 .text-content h1 {
+  font-size: 50px;
+  color: gray;
+}
+.text-content h1 span {
+  font-size: 40px;
   color: #fff;
-    font-size: 60px;
-    font-family: roboto, sans-serif;
-    letter-spacing: 5px;
-    border-right: 5px solid red;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-             typing 2s steps(12)infinite,
-             cursor .4s step-end infinite alternate;
-}
-@keyframes cursor {
-      50% { border-color: transparent }
-}
-@keyframes typing {
-    from { width: 0 }
 }
 .text-content h4 {
   color: #fff;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: roboto, sans-serif;
 }
 .Myimage {
@@ -157,8 +144,8 @@ header .nav-btn {
   .text-content {
     width: 100%;
   }
-  .text-content span {
-    font-size: 16px;
+  .text-content h1 span {
+    font-size: 20px;
   }
   .text-content h1 {
     font-size: 24px;
@@ -265,13 +252,13 @@ header .nav-btn {
   display: flex;
   justify-content: space-between;
 }
-#root > div > div.skills > div > div > div.circle > div.fisrt-circle {
+.circle .first-circle {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   background-color: gray;
 }
-#root > div > div.skills > div > div > div.circle > div.sec-circle {
+.circle .sec-circle {
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -301,7 +288,7 @@ header .nav-btn {
 }
 .secline {
   background: linear-gradient(#2193b0 , #6dd5ed);
-  width: 90%;
+  width: 0%;
   height: 8px;
 }
 .grid {
@@ -313,21 +300,49 @@ header .nav-btn {
   grid-template-columns: auto auto;
 
 }
-#root > div > div.skillSection > div > div > div:nth-child(3) > div.firstline > div {
-  width: 80%;
+#skillbox:nth-child(2) > div.firstline > div{
+  width: 0%;
+  background: linear-gradient(#E43D00, #FFE900);
+}
+#skillbox:nth-child(3) > div.firstline > div {
+  width: 0%;
   background: linear-gradient(#cc2b5e,  #753a88);
 }
-#root > div > div.skillSection > div > div > div:nth-child(4) > div.firstline > div {
-  width: 70%;
+#skillbox:nth-child(4) > div.firstline > div {
+  width: 0%;
   background: linear-gradient(#42275a, #734b6d);
 }
-#root > div > div.skillSection > div > div > div:nth-child(5) > div.firstline > div {
-  width: 70%;
+#skillbox:nth-child(5) > div.firstline > div {
+  width: 0%;
   background: linear-gradient(#000428,  #004e92);
 }
-#root > div > div.skillSection > div > div > div:nth-child(6) > div.firstline > div {
-  width: 70%;
+#skillbox:nth-child(6) > div.firstline > div {
+  width: 0%;
   background: linear-gradient(#ff512f, #dd2476);
+}
+#skillbox:first-child > div.skillProgressbar > ul > li {
+  color: aqua;
+  font-weight: 650;
+}
+#skillbox:nth-child(2) > div.skillProgressbar > ul > li {
+  color: #E43D00;
+  font-weight: 650;
+}
+#skillbox:nth-child(3) > div.skillProgressbar > ul > li {
+  color: #cc2b5e;
+  font-weight: 650;
+}
+#skillbox:nth-child(4) > div.skillProgressbar > ul > li {
+  color: #42275a;
+  font-weight: 650;
+}
+#skillbox:nth-child(5) > div.skillProgressbar > ul > li {
+  color: #004e92;
+  font-weight: 650;
+}
+#skillbox:nth-child(6) > div.skillProgressbar > ul > li {
+  color: #dd2476;
+  font-weight: 650;
 }
 @media(max-width:768px) {
   .grid {
@@ -416,8 +431,17 @@ header .nav-btn {
 }
 /*project end*/
 /*from start*/
-.form-container {
+#form-container h1 {
+  color: #fff;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#form-container h1 span {
+  color: #2193b0;
+}
+.form-content {
   display: flex;
+  gap: 20px;
   width: 80%;
   margin: 0 auto;
 }
@@ -466,7 +490,7 @@ textarea {
   padding: 10px  20px;
 }
 @media(max-width:768px) {
-  .form-container {
+  .form-content {
     flex-direction: column;
   }
   form {
@@ -478,11 +502,12 @@ textarea {
     grid-row: auto;
   }
   .formText {
+    margin-top: 0;
     width: 100%;
   }
   .formText h1 {
     width: 100%;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 }
 /*from end*/

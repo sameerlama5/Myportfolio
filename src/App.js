@@ -11,6 +11,7 @@ import Projectnews from '../src/images/news.png';
 import Projectngo from '../src/images/ngo.png';
 import Projecttravel from '../src/images/travel.png';
 import Footer from './component/footer';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
       <div className='skillSection'>
         <div className='skillContent'>
           <div className='circle'>
-            <div className='fisrt-circle'>
+            <div className='first-circle'>
 
             </div>
             <div className='sec-circle'>
@@ -29,8 +30,8 @@ function App() {
             </div>
           </div>
           <h1>My <span>Skills</span></h1>
-          <div className='grid'>
-             <Skill 
+          <div className="grid">
+             <Skill
              title='HTML'
              progress= '90%'
              />

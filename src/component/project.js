@@ -1,6 +1,6 @@
 function Project(props) {
     return(
-        <div className="projectCard">
+        <div className="projectCard" id="ProjectCard">
             <div className="projectlistImg">
                 <img src={props.image}/>
             </div>

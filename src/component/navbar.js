@@ -10,9 +10,9 @@ function Navbar() {
             <h1>Sameer <span>Lama</span>.</h1>
             <nav ref={navRef}>
                 <a href="/#">Home</a>
-                <a href="/#">Skill</a>
-                <a href="/#">Project</a>
-                <a href="/#">Contact</a>
+                <a href="#skillbox">Skill</a>
+                <a href="#ProjectCard">Project</a>
+                <a href="#contact">Contact</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <i className="fa-solid fa-x"/>
                 </button>

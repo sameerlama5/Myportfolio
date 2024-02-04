@@ -1,6 +1,8 @@
  function Form() {
     return(
-        <div className="form-container">
+        <div id="form-container">
+            <h1>Contact <span>Me</span></h1>
+        <div className="form-content">
             <div className="formText">
                 <h1>Enter your information in following form..!</h1>
             </div>
@@ -14,6 +16,7 @@
         <textarea name="message" placeholder="Text me..." required></textarea>
         <button className="btn-sent" type="submit">SENT</button>
        </form>
+         </div>
          </div>
     </div>
 

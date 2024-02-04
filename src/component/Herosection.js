@@ -1,12 +1,21 @@
+import { useTypewriter } from 'react-simple-typewriter';
 import Sameer from '../images/sameerlama55.png';
 function Herosection () {
+    const [typeEffect] = useTypewriter({
+        words: ['Sameer Lama .'],
+        loop: {},
+        typeSpeed: 160,
+        deleteSpeed: 100
+
+    })
     return (
         <div className="hero">
             <div className="heroContent">
             <div className="text-content">
-                <span>I'M,</span>
-                <h1>Sameer Lama .</h1>
-                <h4>FRONT-END DEVELOPER</h4>
+               <h1>
+                I'M <span>{typeEffect}</span>
+               </h1>
+               <h4>FRONTEND DEVELOPER</h4>
                 <button type="button" className="btn">Contact ME</button>
         </div>
             <div className="Myimage">

@@ -1,6 +1,8 @@
+import { motion } from 'framer-motion';
+import React from "react";
 function Skill(props) {
     return(
-        <div className="skillbox">
+        <div className="skillbox" id="skillbox">
         <div className="skillProgressbar">
             <ul>
                 <li>{props.title}</li>
@@ -8,9 +10,14 @@ function Skill(props) {
             </ul>
         </div>
         <div className="firstline">
-            <div className="secline">
-
-            </div>
+            <motion.div className="secline"
+            animate={{
+                width: "90%"
+            }}
+            transition={{
+                duration: 5
+            }}
+            />
         </div>
         </div>
         
