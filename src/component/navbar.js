@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useRef } from "react";
 function Navbar() {
     const navRef = useRef();
@@ -7,18 +8,17 @@ function Navbar() {
     return(
         <header>
             <div className="nav-container">
-            <h1>Sameer <span>Lama</span>.</h1>
+            <a className="logoText" href="index.html">S<span>G</span>.</a>
             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="#skillbox">Skill</a>
-                <a href="#ProjectCard">Project</a>
-                <a href="#contact">Contact</a>
+                <Link to="/">home</Link>
+                <Link to="skillpage">Skill</Link>
+                <Link to="projectpage">Project</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <i className="fa-solid fa-x"/>
                 </button>
             </nav>
             <div className="btn-resume">
-            <a href="#/">RESUME</a>
+            <a href="resumepage">RESUME</a>
             </div>
             <button className="nav-btn" onClick={showNavbar}>
             <i className="fa-solid fa-bars"/>

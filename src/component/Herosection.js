@@ -6,14 +6,14 @@ function Herosection () {
         loop: {},
         typeSpeed: 160,
         deleteSpeed: 100
+    });
+        return (
 
-    })
-    return (
-        <div className="hero">
+         <div className="hero">
             <div className="heroContent">
             <div className="text-content">
                <h1>
-                I'M <span>{typeEffect}</span>
+                I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
                <h4>FRONTEND DEVELOPER</h4>
                 <button type="button" className="btn">Contact ME</button>
