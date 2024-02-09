@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import HomePage from "../pages/homePage";
 function Navbar() {
     const navRef = useRef();
     const showNavbar = () => {
@@ -8,7 +9,7 @@ function Navbar() {
     return(
         <header>
             <div className="nav-container">
-            <a className="logoText" href="index.html">S<span>G</span>.</a>
+            <a className="logoText" href={<HomePage/>}>S<span>G</span>.</a>
             <nav ref={navRef}>
                 <Link to="/">home</Link>
                 <Link to="skillpage">Skill</Link>

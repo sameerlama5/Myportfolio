@@ -16,7 +16,7 @@ function Herosection () {
                 I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
                <h4>FRONTEND DEVELOPER</h4>
-                <button type="button" className="btn">Contact ME</button>
+                <button type="button" className="btn">Contact Me</button>
         </div>
             <div className="Myimage">
                 <img src={Sameer}/>
