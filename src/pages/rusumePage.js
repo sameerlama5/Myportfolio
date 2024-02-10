@@ -1,5 +1,6 @@
 function ResumePage() {
     return(
+        <div className="hole-resume">
         <div className="resume-container">
             <div className="resume-page">
                 <div className="resume-content1">
@@ -82,6 +83,7 @@ function ResumePage() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
