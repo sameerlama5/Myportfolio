@@ -165,28 +165,10 @@ header .nav-btn {
 .Myimage {
   z-index: -2;
   border-bottom: 2px solid darkgray;
-  position: relative;
-  overflow: hidden;
-  width: 300Px;
-  height: 500px;
+  width: 100%;
 }
 .Myimage img {
-  top: 0;
-  left: 0;
-  position: absolute;
-  animation: transform .7s forwards 1s;
-  object-fit: contain;
-  
-}
-@keyframes transform {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);   
-
-  }
-
+  width: 100%; 
 }
 .btn {
   margin-top: 20px;
@@ -221,7 +203,7 @@ header .nav-btn {
     font-size: 16px;
   }
   .Myimage {
-    height: 287px;
+    width: 100%;
   }
   .Myimage img {
     width: 100%;
