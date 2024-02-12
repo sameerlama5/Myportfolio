@@ -164,11 +164,17 @@ header .nav-btn {
 }
 .Myimage {
   z-index: -2;
-  border-bottom: 2px solid darkgray;
   width: 100%;
 }
 .Myimage img {
-  width: 100%; 
+  width: 100%;
+  animation: animate 1.5s infinite ease alternate;
+  border-radius: 50%;
+}
+@keyframes animate {
+  to  {
+    transform: translateY(20px);
+  }
 }
 .btn {
   margin-top: 20px;
@@ -203,6 +209,8 @@ header .nav-btn {
     font-size: 16px;
   }
   .Myimage {
+    border-bottom: 2px solid gray;
+  padding: 20px 0px 15px 0px;
     width: 100%;
   }
   .Myimage img {
@@ -218,9 +226,79 @@ header .nav-btn {
   }
   .Myimage img {
     width: 100%;
+    top: 80px;
   }
 }
 /*herosection end/
+/*popups start*/
+.overlay {
+  box-shadow: 0px 0px 15px 5px #000428;
+  padding: 0px 5px 20px 5px;
+  position: absolute;
+  background: rgba(128, 128, 128,.6);
+  left: 40%;
+  right: 40%;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.closeBtn {
+  color: red;
+  width: 25px;
+  padding: 0px 0px 0px 6px;
+  float: right;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.formContent {
+  padding-top: 10px;
+}
+.formContent form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContent h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.formContent input {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.formContent textarea {
+  padding: 10px 20px;
+  width: 100%;
+}
+.formContent button {
+  color: #bdc3c7;
+  font-size: 16px;
+  font-weight: 650px;
+  outline: none;
+  border: none;
+  background-color: #3586ff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width:60%;
+}
+.formContent button:hover {
+  background-color: darkblue;
+  color: #fff;
+}
+@media(max-width:768px) {
+  .overlay {
+    left: 0;
+    right: 0;
+  }
+}
+
+/*popups end/
 /*about me start*/
 .about {
   margin-top: 30px;
@@ -237,6 +315,7 @@ header .nav-btn {
   width: 100%;
 }
 .aboutImage img {
+  border-radius: 25%;
   width: 100%;
 }
 .AboutMeText h1 {
@@ -482,87 +561,6 @@ header .nav-btn {
   }
 }
 /*project end*/
-/*from start*/
-#form-container h1 {
-  color: #fff;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-#form-container h1 span {
-  color: #2193b0;
-}
-.form-content {
-  display: flex;
-  gap: 20px;
-  width: 80%;
-  margin: 0 auto;
-}
-.formText {
-  width: 50%;
-  font-size: 20px;
-  word-wrap: break-word;
-  color: #fff;
-}
-form {
-  gap: 10px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-}
-input {
-  border-radius: 10px;
-  color: #fff;
-  outline: none;
-  border-color: #fff;
-  padding: 15px 30px;
-  background: transparent;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-textarea {
-  border-radius: 10px;
-  grid-column: 1/3;
-  grid-row: 3/4;
-  height: 150px;
-  color: #fff;
-  outline: none;
-  background: transparent;
-  border-color: #fff;
-}
-.btn-sent {
-  width: 100px;
-  margin-top: 25px;
-  border: none;
-  background: blueviolet;
-  border-radius: 5px;
-  padding: 10px  20px;
-}
-@media(max-width:768px) {
-  .form-content {
-    flex-direction: column;
-  }
-  form {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-  textarea {
-    grid-column: auto;
-    grid-row: auto;
-  }
-  .formText {
-    margin-top: 0;
-    width: 100%;
-  }
-  .formText h1 {
-    width: 100%;
-    /* font-size: 20px; */
-  }
-}
-/*from end*/
 /*resume start*/
 .hole-resume {
   margin-top: 30px;
@@ -771,6 +769,11 @@ footer .wave#wave1 {
 }
 .zoom li a:hover {
   transform: scale(1.1);
+}
+@media(max-width:768px) {
+  .main {
+    width: 100%;
+  }
 }
 
 /*foteer start*/

@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import Popupscontact from '../popupscontact';
 import { useTypewriter } from 'react-simple-typewriter';
 import Sameer from '../images/sameerlama55.png';
 function Herosection () {
@@ -7,6 +9,7 @@ function Herosection () {
         typeSpeed: 160,
         deleteSpeed: 100
     });
+    const [openContact, setOpenContact] = useState(false);
         return (
 
          <div className="hero">
@@ -16,7 +19,11 @@ function Herosection () {
                 I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
                <h4>FRONTEND DEVELOPER</h4>
-                <button type="button" className="btn">Contact Me</button>
+                <button type="button" className="btn" onClick={() => setOpenContact(true)}>Contact Me</button>
+                <Popupscontact
+                open={openContact}
+                onClose={() => setOpenContact(false)}
+                />
         </div>
             <div className="Myimage">
                 <img src={Sameer}/>

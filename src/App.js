@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SkillPage from './pages/skillPage';
 import ProjectPage from './pages/projectPage';
-import FromPage from './pages/fromPage';
 import HomePage from './pages/homePage';
 import Navbar from './component/navbar';
 import ResumePage from './pages/rusumePage';
@@ -15,7 +14,6 @@ function App() {
         <Route path='/' element={<HomePage/> } />
         <Route path='skillpage' element={<SkillPage/>} />
         <Route path='projectpage' element={<ProjectPage/>} />
-        <Route path='frompage' element={<FromPage/>} />
         <Route path='resumepage' element={<ResumePage/>} />
       </Routes>
       </BrowserRouter>

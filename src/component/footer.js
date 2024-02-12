@@ -25,13 +25,8 @@ function Footer() {
             <li><a href="#">Project</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
         <p>Hello it's me <a href="#">Sameer Tamang</a></p>
-
-
     </footer>
-
-
 </div>
     )
 }
