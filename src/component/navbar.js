@@ -8,7 +8,7 @@ function Navbar() {
     return(
         <header>
             <div className="nav-container">
-            <a className="logoText" href="index.html">S<span>G</span>.</a>
+            <Link className="logoText" to="/">SG.</Link>
             <nav ref={navRef}>
                 <Link to="/">home</Link>
                 <Link to="skillpage">Skill</Link>
