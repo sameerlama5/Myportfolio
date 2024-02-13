@@ -10,15 +10,15 @@ function Navbar() {
             <div className="nav-container">
             <Link className="logoText" to="/">SG.</Link>
             <nav ref={navRef}>
-                <Link to="/">home</Link>
-                <Link to="skillpage">Skill</Link>
-                <Link to="projectpage">Project</Link>
+                <Link to="/" onClick={showNavbar}>home</Link>
+                <Link to="skillpage" onClick={showNavbar}>Skill</Link>
+                <Link to="projectpage" onClick={showNavbar}>Project</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <i className="fa-solid fa-x"/>
                 </button>
             </nav>
             <div className="btn-resume">
-            <a href="resumepage">RESUME</a>
+            <a href="resumepage" onClick={showNavbar}>RESUME</a>
             </div>
             <button className="nav-btn" onClick={showNavbar}>
             <i className="fa-solid fa-bars"/>
