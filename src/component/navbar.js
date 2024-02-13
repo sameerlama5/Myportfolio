@@ -18,7 +18,7 @@ function Navbar() {
                 </button>
             </nav>
             <div className="btn-resume">
-            <a href="resumepage" onClick={showNavbar}>RESUME</a>
+            <Link to="resumepage" onClick={showNavbar}>RESUME</Link>
             </div>
             <button className="nav-btn" onClick={showNavbar}>
             <i className="fa-solid fa-bars"/>
