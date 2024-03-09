@@ -13,6 +13,7 @@ function Navbar() {
                 <Link to="/" onClick={showNavbar}>home</Link>
                 <Link to="skillpage" onClick={showNavbar}>Skill</Link>
                 <Link to="projectpage" onClick={showNavbar}>Project</Link>
+                <Link to="/#" onClick={showNavbar}>Blog</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <i className="fa-solid fa-x"/>
                 </button>
