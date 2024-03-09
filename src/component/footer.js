@@ -10,7 +10,7 @@ function Footer() {
         </div>
         <div class="zoom">
             <ul class="social_icon">
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-github"></i></a></li>
 
                 <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
 

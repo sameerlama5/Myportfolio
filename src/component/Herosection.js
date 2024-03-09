@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Popupscontact from '../popupscontact';
 import { useTypewriter } from 'react-simple-typewriter';
-import Sameer from '../images/sameerlama55.png';
+import Sameer from '../images/hero.png';
 function Herosection () {
     const [typeEffect] = useTypewriter({
-        words: ['Sameer Lama .'],
+        words: ['Sameer Tamang .'],
         loop: {},
         typeSpeed: 160,
         deleteSpeed: 100
@@ -18,7 +18,7 @@ function Herosection () {
                <h1>
                 I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
-               <h4>FRONTEND DEVELOPER</h4>
+               <h4>a front-end developer from Nepal who loves doing open source projects.</h4>
                 <button type="button" className="btn" onClick={() => setOpenContact(true)}>Contact Me</button>
                 <Popupscontact
                 open={openContact}

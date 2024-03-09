@@ -1,4 +1,4 @@
-import AboutImg from '../images/sameelama.png';
+import AboutImg from '../images/about.webp';
 function About() {
     return(
         <div className="about">
