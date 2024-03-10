@@ -39,9 +39,12 @@ nav a {
   font-weight: 500;
   position: relative;
   margin: 0 2rem;
-  color: gainsboro;
+  color: lightgray;
   text-decoration: none;
-  letter-spacing: 1.5px;
+}
+nav a.active {
+  color: #dd2476;
+  font-weight: 700;
 }
 nav a::after {
   content: '';
@@ -87,6 +90,7 @@ header .nav-btn {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -95,7 +99,7 @@ header .nav-btn {
     gap: 1rem;
     background: #000428;
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateX(-100vh);
   }
   header .responsive_nav {
     transform: none;
@@ -126,7 +130,7 @@ header .nav-btn {
   font-size: 36px;
   font-family: roboto, sans-serif;
   font-weight: 500;
-  color: gray;
+  color: #fff;
 }
 .text-content h1 {
   font-size: 50px;
@@ -196,7 +200,7 @@ header .nav-btn {
     gap: 30px;
   }
   .Myimage {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #fff;
   padding: 20px 0px 15px 0px;
     width: 100%;
   }
@@ -221,17 +225,17 @@ header .nav-btn {
 .overlay {
   width: 90%;
   max-width: 400px;
-  box-shadow: 0px 0px 15px 5px #000428;
-  padding: 0px 5px 20px 5px;
+  box-shadow: 0px 0px 8px 1px #3586ff;
+  padding: 0px 30px 20px 30px;
   position: absolute;
-  background: rgba(128, 128, 128,.6);
+  background: rgba(255, 255, 255, 0.6);
   top: 80%;
   left: 50%;
   transform: translate(-50%,-50%);
-  border: 2px solid gray;
   border-radius: 10px;
 }
 .closeBtn {
+  margin-top: 10px;
   color: red;
   width: 25px;
   padding: 0px 0px 0px 6px;
@@ -239,6 +243,11 @@ header .nav-btn {
   font-size: 16px;
   border: 2px solid #fff;
   border-radius: 5px;
+}
+.closeBtn:hover {
+  background-color: red;
+  color: #fff;
+  border-color: red;
 }
 .formContent {
   padding-top: 10px;
@@ -251,21 +260,24 @@ header .nav-btn {
 }
 .formContent h1 {
   margin-bottom: 15px;
-  text-align: center;
   color: #fff;
   font-size: 20px;
 }
 .formContent input {
+  border: none;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 15px;
+  background-color: #1d2671;
   width: 100%;
   padding: 10px 20px;
-  outline: none;
+  outline: red;
 }
 .formContent textarea {
   padding: 10px 20px;
+  background-color: #1d2671;
   width: 100%;
+  outline: red;
 }
 .formContent button {
   color: #bdc3c7;
@@ -273,13 +285,13 @@ header .nav-btn {
   font-weight: 650px;
   outline: none;
   border: none;
-  background-color: #3586ff;
+  background-color: red;
   padding: 10px 20px;
   margin-top: 20px;
   width:60%;
 }
 .formContent button:hover {
-  background-color: darkblue;
+  background-color: darkred;
   color: #fff;
 }
 /*popups end/
