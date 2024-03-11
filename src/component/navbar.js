@@ -40,7 +40,7 @@ function Navbar() {
                     </button>
                 </nav>
 
-                <div className="btn-resume">
+                <div className="btn-resume" id={activeLink === "/resumepage" ? "active" : ""}>
                     <Link to="/resumepage">RESUME</Link>
                 </div>
 

@@ -5,6 +5,7 @@ import ProjectPage from './pages/projectPage';
 import HomePage from './pages/homePage';
 import ResumePage from './pages/rusumePage';
 import Navbar from './component/navbar';
+import BlogPage from './pages/blogpage';
 function App() {
   return (
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='skillpage' element={<SkillPage/>} />
         <Route path='projectpage' element={<ProjectPage/>} />
         <Route path='resumepage' element={<ResumePage/>} />
+        <Route path='blogpage' element={<BlogPage/>} />
       </Routes>
       </BrowserRouter>
 
