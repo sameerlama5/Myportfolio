@@ -10,13 +10,13 @@ function Footer() {
         </div>
         <div class="zoom">
             <ul class="social_icon">
-                <li><a href="#"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://github.com/sameerlama5"><i class="fa-brands fa-square-github"></i></a></li>
 
                 <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
 
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100052345146509"><i class="fa-brands fa-facebook"></i></a></li>
 
-                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/sameer_ghising55/"><i class="fa-brands fa-square-instagram"></i></a></li>
             </ul>
         </div>
         <ul class="menu">

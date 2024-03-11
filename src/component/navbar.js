@@ -32,7 +32,7 @@ function Navbar() {
                     <Link to="/projectpage" onClick={showNavbar} className={activeLink === "/projectpage" ? "active" : ""}>Project</Link>
 
 
-                    <Link to="/#" onClick={showNavbar}>Blog</Link>
+                    <Link to="/blogpage" onClick={showNavbar} className={activeLink === "/blogpage" ? "active" : ""}>Blog</Link>
 
 
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
