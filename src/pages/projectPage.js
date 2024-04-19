@@ -1,8 +1,8 @@
 import Project from "../component/project";
-import Projectcooprate from '../images/cooperete.png';
-import Projectngo from '../images/ngo.png';
-import Projecttravel from '../images/travel.png';
-import Projectnews from '../images/news.png';
+import Projectcooprate from '../images/cooperate.jpg';
+import Projectngo from '../images/ngo.jpg';
+import Projecttravel from '../images/travel.jpg';
+import Projectnews from '../images/news.jpg';
 import Footer from "../component/footer";
 function ProjectPage() {
     return(
