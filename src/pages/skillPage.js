@@ -3,7 +3,7 @@ import Footer from "../component/footer";
 function SkillPage() {
     return (
     <>
-        <div className='skills' data-aos="zoom-out">
+        <div className='skills'>
 <div className='skillSection'>
   <div className='skillContent'>
     <div className='circle'>

@@ -1,13 +1,6 @@
-import React, {useEffect} from "react";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 function Project(props) {
-    useEffect(() => {
-        AOS.init({duration: 2000});
-    },[]);
     return(
-        <div className="projectCard" id="ProjectCard" data-aos="zoom-out-down">
+        <div className="projectCard" id="ProjectCard">
             <div className="projectlistImg">
                 <img src={props.image} alt="project images."/>
             </div>

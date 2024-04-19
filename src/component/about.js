@@ -3,7 +3,7 @@ function About() {
     return(
         <div className="about">
             <div className="aboutContent">
-            <div className="aboutImage" data-aos="fade-up-left">
+            <div className="aboutImage">
                 <img src={AboutImg} alt="" />
             </div>
             <div className="AboutMeText">

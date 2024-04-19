@@ -14,7 +14,7 @@ function Herosection () {
 
          <div className="hero">
             <div className="heroContent">
-            <div className="text-content" data-aos="zoom-in-right">
+            <div className="text-content">
                <h1>
                 I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
@@ -25,7 +25,7 @@ function Herosection () {
                 onClose={() => setOpenContact(false)}
                 />
         </div>
-            <div className="Myimage" data-aos="zoom-in-left">
+            <div className="Myimage">
                 <img src={Sameer} alt="front images"/>
             </div>
             </div>
