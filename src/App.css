@@ -48,7 +48,7 @@ nav a.active {
 nav a::after {
   content: '';
   position: absolute;
-  background-color: #fff;
+  background-color: #ff512f;
   height: 3px;
   width: 0;
   left: 0;
@@ -56,7 +56,7 @@ nav a::after {
   transition: 0.3s;
 }
 nav a.active::after {
-  color: #fff;
+  color: #ff512f;
   width: 100%;
 }
 nav a:hover {
@@ -80,6 +80,9 @@ header .nav-btn {
   padding: 8px 20px;
   border: 2px solid #fff;
 }
+.btn-resume#active {
+  background-color: #ff512f;
+}
 .btn-resume a {
   text-decoration: none;
   color: #fff;
@@ -98,7 +101,6 @@ header .nav-btn {
     display: flex;
     flex-direction: column;
     padding-top: 70px;
-    /* justify-content: center; */
     gap: 1rem;
     background: #23295c;
     transition: 1s;
@@ -157,6 +159,14 @@ header .nav-btn {
   font-size: 50px;
   color: #ff512f;
 }
+.text-content p {
+  font-size: 30px;
+  color: #fff;
+}
+.text-content p span {
+  font-weight: bold;
+  color: #ff512f;
+}
 .cursor {
   z-index: -2;
   display: inline-block;
@@ -175,12 +185,6 @@ header .nav-btn {
   50% {
     opacity: 0;
   }
-}
-.text-content h4 {
-  color: #fff;
-  margin-top: 15px;
-  font-size: 30px;
-  font-family: roboto, sans-serif;
 }
 .Myimage {
   z-index: -2;
@@ -203,12 +207,12 @@ header .nav-btn {
   border: none;
   border-radius: 3px;
   padding: 10px 20px;
-  background-color: red;
+  background-color: rgba(234, 42, 4);
   color: #fff;
 }
 .btn:hover {
   cursor: pointer;
-  background-color: darkred;
+  background-color: #ff512f;
 }
 @media(max-width:768px) {
   .heroContent {
@@ -313,10 +317,11 @@ header .nav-btn {
 /*popups end/
 /*about me start*/
 .about {
-  margin-top: 30px;
+  background-color: rgba(0, 0, 0, .1);
+  margin-top: 60px;
 }
 .aboutContent {
-  padding: 20px;
+  padding: 30px 0px 30px 0px;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -329,11 +334,14 @@ header .nav-btn {
 .aboutImage img {
   width: 100%;
 }
-.AboutMeText h1 {
+.AboutMeText h2 {
   color: #fff;
   font-family: roboto, sans-serif;
   font-size: 40px;
   letter-spacing: 2px;
+}
+.AboutMeText h2 span {
+  color: #ff512f;
 }
 .AboutMeText h5 {
   color: #fff;
@@ -406,7 +414,8 @@ header .nav-btn {
   border-radius: 50%;
   background-color: #004e92;
 }
-.skillContent h1 {
+.skillContent h2 {
+  font-size: 38px;
   padding-bottom: 50px;
   text-align: center;
   color: black;
@@ -508,13 +517,14 @@ header .nav-btn {
   width: 70%;
   }  
 }
-/*skills start*/
+/*skills end*/
 /*project start*/
 .project {
   width: 80%;
   margin: 0 auto;
 }
-.project h1 {
+.project h2 {
+  font-size: 38px;
   padding: 20px 0px 30px 0px;
   text-align: center;
   color: #fff;
@@ -544,13 +554,14 @@ header .nav-btn {
 }
 .projectlistImg img {
   width: 600px;
-  transition: ease .9s;
+  transition: ease .4s;
 }
 .projectlistImg img:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 @media(max-width:768px) {
   .projectCard {
+    margin-bottom: 0;
     width: 100%;
     flex-direction: column;
   }
@@ -691,7 +702,7 @@ header .nav-btn {
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 50px;
   position: relative;
   width: 100%;
   background: #3586ff;

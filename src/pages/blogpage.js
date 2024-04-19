@@ -1,6 +1,6 @@
 function BlogPage() {
   return(
-    <h1 style={{ textAlign: 'center', color: '#fff' }}>Blog</h1>
+    <h2 style={{ textAlign: 'center', color: '#fff', fontSize: '38px' }}>Blog</h2>
   )
 }
 export default BlogPage;

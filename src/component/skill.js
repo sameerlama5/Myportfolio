@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from "react";
+
 function Skill(props) {
     return(
         <div className="skillbox" id="skillbox">

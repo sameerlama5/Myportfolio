@@ -9,9 +9,9 @@ function Resume() {
                     <div className="contact-info">
                         <h2>CONTACT</h2>
                         <ul>
-                            <li><i class="fa-solid fa-phone"></i>9808724075</li>
-                            <li><i class="fa-regular fa-envelope"></i>tamansameer5@gmail.com</li>
-                            <li><i class="fa-solid fa-location-dot"></i>Bhaktapur, Suryabinayak</li>
+                            <li><i className="fa-solid fa-phone"></i>9808724075</li>
+                            <li><i className="fa-regular fa-envelope"></i>tamansameer5@gmail.com</li>
+                            <li><i className="fa-solid fa-location-dot"></i>Bhaktapur, Suryabinayak</li>
                         </ul>
                     </div>
                     <div className="achievement-info">

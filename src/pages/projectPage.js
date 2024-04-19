@@ -8,7 +8,7 @@ function ProjectPage() {
     return(
         <>
         <div className="project" id="project">
-        <h1>My <span>Project</span></h1>
+        <h2>My <span>Project</span></h2>
         <div className='projectContainer'>
         <Project
       image={Projectcooprate}

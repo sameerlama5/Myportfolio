@@ -14,19 +14,19 @@ function Herosection () {
 
          <div className="hero">
             <div className="heroContent">
-            <div className="text-content">
+            <div className="text-content" data-aos="zoom-in-right">
                <h1>
                 I'M <span>{typeEffect}<span className="cursor relative"/></span>
                </h1>
-               <h4>a front-end developer from Nepal who loves doing open source projects.</h4>
+               <p>A <span>front-end developer</span> from <span>Nepal</span> who loves doing open source projects.</p>
                 <button type="button" className="btn" onClick={() => setOpenContact(true)}>Contact Me</button>
                 <Popupscontact
                 open={openContact}
                 onClose={() => setOpenContact(false)}
                 />
         </div>
-            <div className="Myimage">
-                <img src={Sameer}/>
+            <div className="Myimage" data-aos="zoom-in-left">
+                <img src={Sameer} alt="front images"/>
             </div>
             </div>
         </div>
